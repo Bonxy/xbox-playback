@@ -12,7 +12,7 @@
 :root{--accent:#4FD14F;--bg:#0D100E;--card:#161B18;--line:#2F3832;--muted:#A9B2AB;--soft:#DDE3DE}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:#F2F5F2;font-family:Inter,system-ui,sans-serif}
-.wrap{max-width:1200px;width:100%;margin:0 auto;padding:72px;display:flex;flex-direction:column;gap:56px}
+.wrap{width:1200px;margin:0 auto;padding:72px;display:flex;flex-direction:column;gap:56px}
 .disp{font-family:'Space Grotesk',sans-serif;font-weight:700}
 .acc{color:var(--accent)}
 .muted{color:var(--muted)}
@@ -75,48 +75,6 @@ h1{margin:0;font-family:'Space Grotesk',sans-serif;font-size:150px;line-height:.
 .favs .rank{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:var(--accent)}
 .favs .t{font-size:18px;font-weight:600;line-height:1.25}
 footer{display:flex;justify-content:space-between;border-top:1px solid #2A322C;padding-top:28px;font-size:16px;color:var(--muted)}
-
-/* ---- tablet & mobile ---- */
-@media (max-width: 900px){
-  .wrap{padding:24px 16px;gap:40px}
-  .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-  .grid3,.grid2{grid-template-columns:1fr;gap:20px}
-  .card{padding:22px}
-  h2{font-size:30px !important}
-
-  /* header */
-  .hero{padding:28px 22px;min-height:auto;gap:32px;background-position:70% center}
-  .topline{flex-direction:column;align-items:flex-start;gap:6px}
-  .who{gap:18px}
-  .gamerpic{width:88px;height:88px}
-  h1{font-size:68px !important;letter-spacing:-3px}
-  .hero [style*="font-size:24px"]{font-size:17px !important}
-
-  /* big numbers */
-  .disp[style*="font-size:64px"],.disp[style*="font-size:72px"]{font-size:40px !important}
-  .disp[style*="font-size:88px"]{font-size:56px !important}
-  .rec .num{font-size:40px}
-
-  /* origin: drop the timeline line once it wraps */
-  .timeline:before,.tl:before{display:none}
-  .timeline{padding-top:0}
-
-  /* #1 game */
-  .top1{grid-template-columns:1fr;padding:22px;gap:24px}
-  .top1 .box{max-width:240px}
-  .top1>div>div:first-child{flex-direction:column;align-items:flex-start !important}
-  .top1 [style*="text-align:right"]{text-align:left !important}
-
-  /* favourites */
-  .favs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px}
-  .favs .t{font-size:15px}
-  footer{flex-direction:column;gap:8px;font-size:14px}
-}
-@media (max-width: 480px){
-  h1{font-size:52px !important}
-  .disp[style*="font-size:64px"],.disp[style*="font-size:72px"]{font-size:34px !important}
-  .favs{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
 </style>
 </head>
 <body>
