@@ -27,6 +27,8 @@ section{display:flex;flex-direction:column;gap:28px}
 .label{font-size:16px;letter-spacing:2px;color:var(--muted)}
 img{display:block}
 .box{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:#222a24}
+.boxlink{display:block;border-radius:10px}
+.boxlink:hover .box{outline:3px solid var(--accent);outline-offset:2px}
 
 /* header */
 .hero{position:relative;border-radius:24px;overflow:hidden;padding:56px;min-height:520px;display:flex;flex-direction:column;justify-content:space-between;
@@ -116,16 +118,16 @@ footer{display:flex;justify-content:space-between;border-top:1px solid #2A322C;p
 <div class="label" style="font-size:15px">19 APR 2008</div><div class="what">FIRST CONSOLE</div><div class="name">Xbox 360</div>
 </div>
 <div class="tl">
-<img class="box" alt="Tom Clancy's Rainbow Six Vegas 2 box art" src="img/rainbowsix">
+<a class="boxlink" href="https://projects.bonxy.org/xboxtimer/tc-rainbowsixvegas-2" target="_blank" rel="noopener" aria-label="Tom Clancy's Rainbow Six Vegas 2 on Xbox Timer"><img class="box" alt="Tom Clancy's Rainbow Six Vegas 2 box art" src="img/rainbowsix"></a>
 <div class="label" style="font-size:15px">2008</div><div class="what">FIRST GAME PLAYED</div><div class="name">Rainbow Six Vegas 2</div>
 <div class="muted" style="font-size:15px">First game on file. Definitely not your first game.</div>
 </div>
 <div class="tl">
-<img class="box" alt="DiRT 2 box art" src="img/dirt2.jpeg">
+<a class="boxlink" href="https://projects.bonxy.org/xboxtimer/dirt-2" target="_blank" rel="noopener" aria-label="DiRT 2 on Xbox Timer"><img class="box" alt="DiRT 2 box art" src="img/dirt2.jpeg"></a>
 <div class="label" style="font-size:15px">DiRT 2</div><div class="what">FIRST ACHIEVEMENT</div><div class="name">“Best Friends Forever!”</div>
 </div>
 <div class="tl">
-<img class="box" alt="Parachute Panic box art" src="img/parachutepanic">
+<a class="boxlink" href="https://projects.bonxy.org/xboxtimer/parachute-panic" target="_blank" rel="noopener" aria-label="Parachute Panic on Xbox Timer"><img class="box" alt="Parachute Panic box art" src="img/parachutepanic"></a>
 <div class="label" style="font-size:15px">18 NOV 2011</div><div class="what">FIRST 100% COMPLETION</div><div class="name">Parachute Panic</div>
 </div>
 </div>
@@ -133,7 +135,7 @@ footer{display:flex;justify-content:space-between;border-top:1px solid #2A322C;p
 
 <!-- #1 GAME -->
 <section class="top1">
-<img class="box" alt="Grand Theft Auto V box art" src="img/gta5">
+<a class="boxlink" href="https://projects.bonxy.org/xboxtimer/grand-theft-auto-v" target="_blank" rel="noopener" aria-label="Grand Theft Auto V on Xbox Timer"><img class="box" alt="Grand Theft Auto V box art" src="img/gta5"></a>
 <div style="display:flex;flex-direction:column;gap:28px">
 <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
 <div class="head">
@@ -197,9 +199,9 @@ footer{display:flex;justify-content:space-between;border-top:1px solid #2A322C;p
 <section>
 <div class="head"><div class="kicker">06 · GAME RECORDS</div><h2>Forza Horizon owns the record books</h2></div>
 <div class="grid3">
-<div class="rec"><img class="box" alt="Forza Horizon 4 box art" src="img/fh4"><div class="label">HIGHEST GAMERSCORE</div><div class="num">3,435</div><div style="font-size:22px;font-weight:600">Forza Horizon 4</div></div>
-<div class="rec"><img class="box" alt="Forza Horizon 3 box art" src="img/fh3"><div class="label">MOST ACHIEVEMENTS</div><div class="num">549</div><div style="font-size:22px;font-weight:600">Forza Horizon 3</div></div>
-<div class="rec"><img class="box" alt="Forza Horizon 5 box art" src="img/fh5"><div class="label">MOST SESSIONS</div><div class="num">3,449</div><div style="font-size:22px;font-weight:600">Forza Horizon 5</div></div>
+<div class="rec"><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-horizon-4" target="_blank" rel="noopener" aria-label="Forza Horizon 4 on Xbox Timer"><img class="box" alt="Forza Horizon 4 box art" src="img/fh4"></a><div class="label">HIGHEST GAMERSCORE</div><div class="num">3,435</div><div style="font-size:22px;font-weight:600">Forza Horizon 4</div></div>
+<div class="rec"><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-horizon-3" target="_blank" rel="noopener" aria-label="Forza Horizon 3 on Xbox Timer"><img class="box" alt="Forza Horizon 3 box art" src="img/fh3"></a><div class="label">MOST ACHIEVEMENTS</div><div class="num">549</div><div style="font-size:22px;font-weight:600">Forza Horizon 3</div></div>
+<div class="rec"><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-horizon-5" target="_blank" rel="noopener" aria-label="Forza Horizon 5 on Xbox Timer"><img class="box" alt="Forza Horizon 5 box art" src="img/fh5"></a><div class="label">MOST SESSIONS</div><div class="num">3,449</div><div style="font-size:22px;font-weight:600">Forza Horizon 5</div></div>
 </div>
 </section>
 
@@ -217,16 +219,16 @@ footer{display:flex;justify-content:space-between;border-top:1px solid #2A322C;p
 <section>
 <div class="head"><div class="kicker">08 · OTHER FAVOURITES</div><h2>Your all-time top 10</h2></div>
 <ol class="favs">
-<li><img class="box" alt="Grand Theft Auto V (Xbox One) box art" src="img/gta5"><span class="rank">01</span><span class="t">Grand Theft Auto V <span class="muted" style="font-weight:400">Xbox One</span></span></li>
-<li><img class="box" alt="Forza Horizon 5 box art" src="img/fh5"><span class="rank">02</span><span class="t">Forza Horizon 5</span></li>
-<li><img class="box" alt="GTA IV box art" src="img/gta5"><span class="rank">03</span><span class="t">GTA IV</span></li>
-<li><img class="box" alt="Forza Motorsport 3 box art" src="img/fm3"><span class="rank">04</span><span class="t">Forza Motorsport 3</span></li>
-<li><img class="box" alt="Forza Motorsport 6 box art" src="img/fm6"><span class="rank">05</span><span class="t">Forza Motorsport 6</span></li>
-<li><img class="box" alt="Grand Theft Auto V (Xbox 360) box art" src="img/gta5"><span class="rank">06</span><span class="t">Grand Theft Auto V <span class="muted" style="font-weight:400">Xbox 360</span></span></li>
-<li><img class="box" alt="Rainbow Six Vegas 2 box art" src="img/rainbowsix"><span class="rank">07</span><span class="t">Rainbow Six Vegas 2</span></li>
-<li><img class="box" alt="Forza Horizon 3 box art" src="img/fh3"><span class="rank">08</span><span class="t">Forza Horizon 3</span></li>
-<li><img class="box" alt="Forza Motorsport 5 box art" src="img/fm5"><span class="rank">09</span><span class="t">Forza Motorsport 5</span></li>
-<li><img class="box" alt="Forza Motorsport 2 box art" src="img/fm2"><span class="rank">10</span><span class="t">Forza Motorsport 2</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/grand-theft-auto-v" target="_blank" rel="noopener" aria-label="Grand Theft Auto V (Xbox One) on Xbox Timer"><img class="box" alt="Grand Theft Auto V (Xbox One) box art" src="img/gta5"></a><span class="rank">01</span><span class="t">Grand Theft Auto V <span class="muted" style="font-weight:400">Xbox One</span></span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-horizon-5" target="_blank" rel="noopener" aria-label="Forza Horizon 5 on Xbox Timer"><img class="box" alt="Forza Horizon 5 box art" src="img/fh5"></a><span class="rank">02</span><span class="t">Forza Horizon 5</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/gta-iv" target="_blank" rel="noopener" aria-label="GTA IV on Xbox Timer"><img class="box" alt="GTA IV box art" src="img/gta5"></a><span class="rank">03</span><span class="t">GTA IV</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-motorsport-3" target="_blank" rel="noopener" aria-label="Forza Motorsport 3 on Xbox Timer"><img class="box" alt="Forza Motorsport 3 box art" src="img/fm3"></a><span class="rank">04</span><span class="t">Forza Motorsport 3</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-motorsport-6" target="_blank" rel="noopener" aria-label="Forza Motorsport 6 on Xbox Timer"><img class="box" alt="Forza Motorsport 6 box art" src="img/fm6"></a><span class="rank">05</span><span class="t">Forza Motorsport 6</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/grand-theft-auto-v" target="_blank" rel="noopener" aria-label="Grand Theft Auto V (Xbox 360) on Xbox Timer"><img class="box" alt="Grand Theft Auto V (Xbox 360) box art" src="img/gta5"></a><span class="rank">06</span><span class="t">Grand Theft Auto V <span class="muted" style="font-weight:400">Xbox 360</span></span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/tc-rainbowsixvegas-2" target="_blank" rel="noopener" aria-label="Rainbow Six Vegas 2 on Xbox Timer"><img class="box" alt="Rainbow Six Vegas 2 box art" src="img/rainbowsix"></a><span class="rank">07</span><span class="t">Rainbow Six Vegas 2</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-horizon-3" target="_blank" rel="noopener" aria-label="Forza Horizon 3 on Xbox Timer"><img class="box" alt="Forza Horizon 3 box art" src="img/fh3"></a><span class="rank">08</span><span class="t">Forza Horizon 3</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-motorsport-5" target="_blank" rel="noopener" aria-label="Forza Motorsport 5 on Xbox Timer"><img class="box" alt="Forza Motorsport 5 box art" src="img/fm5"></a><span class="rank">09</span><span class="t">Forza Motorsport 5</span></li>
+<li><a class="boxlink" href="https://projects.bonxy.org/xboxtimer/forza-motorsport-2" target="_blank" rel="noopener" aria-label="Forza Motorsport 2 on Xbox Timer"><img class="box" alt="Forza Motorsport 2 box art" src="img/fm2"></a><span class="rank">10</span><span class="t">Forza Motorsport 2</span></li>
 </ol>
 </section>
 
